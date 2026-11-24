@@ -1,68 +1,46 @@
 # High-Rise Residential Building — Construction Planning, Cost Control & Project Monitoring
 
-**Academic case study | Civil Execution / Project Operations portfolio**  
-**Tools:** Microsoft Excel; AutoCAD (conceptual drawing work)  
-**Case-study configuration:** Illustrative 15-storey residential building  
-**Planning horizon:** Approximately 74 weeks (illustrative level-1 schedule)
+High-Rise Residential Building - Construction Planning, Cost Control & Project Monitoring
+Planning and monitoring case study for a 2-basement + Ground + 24-floor residential tower (Skyline Residency - Tower A, Delhi-NCR, 96 apartments, ~2.97 lakh sq ft BUA, 79.5 m high).
+Note: Academic / self-initiated case study. The building, quantities, rates, progress, costs, test results and safety numbers are assumed inputs and calibrated to Indian industry norms (IS 456, IS 1786, IS 1200, NBC 2016, CPWD-style rate analysis). They do not represent any real site, contractor or company.
 
-> **Important scope note:** This is a fictional academic case study built with illustrative quantities, rates, progress and cost inputs. It is not a live construction project, a Godrej Properties project, an approved estimate, a tender BOQ, a structural design or a construction-ready document. No architectural/structural drawings, geotechnical report, project specifications or vendor quotations were supplied for this case study. All assumptions must be replaced and professionally reviewed before any real project use.
+What is inside
+Folder	Content
+Excel/	14-sheet linked workbook (formula-driven, zero formula errors)
+Report/	Full project report (DOCX + PDF, 14 pages)
+Charts/	Gantt, S-curve, SPI/CPI trend, budget vs forecast, steel reconciliation, risk heat map
 
-## Project overview
 
-This case study demonstrates an integrated construction-planning and monitoring workflow for a multi-storey residential building. It connects work breakdown and execution sequencing with quantity take-off, a starter BOQ, cost planning, progress monitoring, material procurement planning, QA/QC hold points, risk management and periodic reporting.
+Workbook sheets
+Project_Info > QTO > BOQ > Schedule (CPM + Gantt) > PV_Cashflow > Budget_vs_Actual > EVM > Material_Plan > Steel_Recon > RA_Bills > Quality_Log > Safety_Log > Risk_Register > Dashboard
 
-The scope is organised around mobilisation and approvals, survey and setting out, excavation, PCC and foundations, basement/plinth, RCC frame, masonry, MEP first fix, plastering and waterproofing, finishes, external works, testing and handover.
+Blue cells = inputs / assumptions, black cells = formulas. Change an area, rate, duration or progress % and the budget, schedule, S-curve and EVM metrics update.
+Key results (status date 31-Oct-2026, Month 17 of 30)
+Item	Value
+Concrete / steel / formwork	12,567 m3 / 1,714 MT / 63,543 m2
+Baseline direct cost (BAC)	Rs 90.84 crore (about Rs 3,054 per sq ft)
+Total budget incl. 3% contingency + 4% escalation	Rs 97.20 crore
+Planned vs actual progress	47.4% vs 45.0%
+SPI / CPI	0.95 / 0.95
+EAC (BAC / CPI)	Rs 95.31 crore (VAC Rs -4.47 crore)
+Forecast completion	12-Dec-2027 (12 days beyond contract)
+Largest cost driver of overrun	Reinforcement steel (CPI 0.90)
 
-## What is included
 
-| Deliverable | Contents |
-|---|---|
-| [Project report](report/High_Rise_Residential_Construction_Project_Report.pdf) | Project brief, assumptions, WBS, BOQ methodology, cost control, schedule, material planning, QA/QC, risk, stakeholder coordination, interview explanation and limitations |
-| [Excel monitoring workbook](workbook/High_Rise_Residential_Project_Monitoring.xlsx) | Seven tabs: Dashboard, BOQ & Cost, Progress & Cost, Schedule, Material Plan, QA-QC Checklist and Risk Register |
-| [Dashboard preview](previews/monitoring-dashboard.png) | Snapshot of the formula-driven dashboard, including weighted progress and EVM indicators |
-| [Project basis and limitations](docs/PROJECT_BASIS_AND_LIMITATIONS.md) | Assumptions, illustrative data status and items requiring verification |
-| [Workbook guide](docs/WORKBOOK_GUIDE.md) | Purpose and usage notes for each workbook tab |
-| [Resume and interview notes](docs/RESUME_AND_INTERVIEW_NOTES.md) | Accurate project description and a concise interview explanation |
-
-## Monitoring workbook — illustrative snapshot
-
-The workbook calculates these values from the sample inputs:
-
-| Indicator | Illustrative value | Basis |
-|---|---:|---|
-| BOQ estimate total | ₹19.282 crore | Sum of the illustrative BOQ line items |
-| Progress-monitoring budget baseline | ₹18.263 crore | Sum of activity budgets in the Progress & Cost sheet |
-| BOQ-to-monitoring budget difference | ₹1.019 crore | BOQ total less the separate monitoring budget; reconcile before real use |
-| Month-6 actual cost to date | ₹15.512 crore | Sum of illustrative actual costs |
-| Month-6 weighted planned progress | 62.0% | Planned value / monitoring budget baseline |
-| Month-6 weighted actual progress | 57.3% | Earned value / monitoring budget baseline |
-| Planned Value (PV) | ₹11.318 crore | Sum of activity budget × planned progress |
-| Earned Value (EV) | ₹10.467 crore | Sum of activity budget × actual progress |
-| Schedule Performance Index (SPI) | 0.925 | EV / PV |
-| Cost Performance Index (CPI) | 0.675 | EV / AC |
-| Activities below plan | 8 of 12 | Actual progress below planned progress |
-
-These are **demonstration outputs**, not measured performance of a real site. In particular, the BOQ and activity-monitoring budget use different bases in the supplied workbook; the ₹1.019 crore difference is surfaced in the dashboard rather than silently treated as a reconciled project budget.
-
-## How to use the workbook
-
-1. Start with the **Dashboard** for a snapshot of the current illustrative reporting cut-off.
-2. Review **BOQ & Cost** for work-package quantities, assumed rates and line-item amounts.
-3. Update **Progress & Cost** using a consistent reporting date and verified planned/actual progress and cost records.
-4. Review **Schedule** for WBS logic, durations, start/finish weeks, predecessors and control milestones.
-5. Use **Material Plan**, **QA-QC Checklist** and **Risk Register** as planning templates, not as approved project instructions.
-6. Reconcile the BOQ, control budget, actual cost, commitments and remaining-work forecast before drawing any real project conclusion.
-
-## Limitations and responsible use
-
-- Quantities, rates, progress, dates, costs and risk scores are illustrative inputs.
-- The BOQ is a starter demonstration dataset and is not sufficiently detailed for tendering or procurement.
-- MEP, finishing and external-work lump sums are placeholders.
-- The schedule is a level-1 planning sequence, not a resource-loaded baseline or validated critical-path programme.
-- Quality checks are example hold points; actual acceptance criteria and inspection frequencies must come from approved project specifications, applicable standards, method statements and the project's inspection and test plan.
-- No structural analysis, foundation design, geotechnical design, fire/life-safety design, statutory approval or detailed MEP design is included.
-- Do not use this case study to procure, construct, certify or approve work.
-
-## Portfolio positioning
-
-This case study is intended to demonstrate an understanding of civil execution controls: work packaging, sequencing, BOQ and cost tracking, earned-value concepts, procurement look-ahead, QA/QC documentation, risk registers and reporting. It is a candidate-created academic exercise and is not affiliated with or endorsed by any real-estate developer.
+Skills demonstrated
+- Quantity take-off (IS 1200 approach) and BOQ preparation with rate build-up
+- WBS, CPM logic (FS/SS with lags), critical path, Gantt, cost-loaded S-curve
+- Earned Value Management: PV, EV, AC, SV, CV, SPI, CPI, EAC, ETC, VAC, TCPI
+- Budget vs committed vs actual by cost head; forecast and reserve analysis
+- Material requirement planning with lead-time based order-by dates
+- Steel reconciliation, concrete cube acceptance (IS 456 cl. 16), safety LTIFR
+- Contractor RA bill and payment tracking (retention, advance recovery, TDS)
+- Risk register (probability x impact) and monthly progress report with recovery plan
+How to use
+1. Open Excel/Skyline_Residency_HighRise_Planning_CostControl_Monitoring.xlsx and start at Dashboard.
+2. Edit blue cells in Project_Info, BOQ (rates), Schedule (durations, actual %) and the log sheets.
+3. Read Report/Project_Report.pdf for the method and interpretation.
+Tools
+Microsoft Excel (formulas, conditional formatting, charts), Python (openpyxl, matplotlib) for generating charts. Suggested extensions: MS Project / Primavera P6 schedule, Power BI dashboard, BIM-based quantities.
+Author
+Jayant Dabas (Roll No. 23/CE/063) - B.Tech Civil Engineering, Delhi Technological University (DTU)
